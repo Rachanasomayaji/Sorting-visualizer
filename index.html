@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width,intial-scale=1.0">
+        <title>SORTING VISUALISER</title>
+        <link rel="stylesheet" href="script.css">
+    </head>
+    <body>
+
+        <div class="main-container">
+            <div class="controls">
+                <h1>Sorting Visualizer</h1>
+                <label for="algorithm">Select Algorithm:</label>
+                <select id="algorithm">
+                    <option value="bubble">Bubble Sort</option>
+                    <option value="selection">Selection Sort</option>
+                    <option value="quick">Quick Sort</option>
+                    <option value="merge">Merge Sort</option>
+                    <option value="heap">Heap Sort</option>
+                </select>
+
+                <label for="speed">Speed:</label>
+                <select id="speed">
+                    <option value="fast">Fast</option>
+                    <option value="medium">Medium</option>
+                    <option value="slow">Slow</option>
+                </select>
+
+                <label for="arraySize">Array Size</label>
+                <input type="range" id="arraySize" min="5" max="40" value="15">
+                
+                <button id="randomizeArray">Randomize Array</button>
+                <button id="sort">Sort!</button>
+
+            </div>
+            <div id="arrayContainer" class="array-container"></div>
+        </div>
+        <script src="app.js"></script>
+    </body>  
+</html>
